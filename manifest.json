@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Password Manager",
+    "version": "1.0",
+    "description": "A basic password manager Chrome extension.",
+    "permissions": ["storage", "activeTab"],
+    "background": {
+      "service_worker": "js/background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "Password Manager"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["js/content.js"]
+      }
+    ],
+    "icons": {
+        "48": "icon.png"
+      }
+  }
+  

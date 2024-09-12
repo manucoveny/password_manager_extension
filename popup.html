@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Password Manager</h1>
+
+  <!-- Password Generation Section -->
+  <label for="generatedPassword">Generated Password:</label>
+  <input type="text" id="generatedPassword" readonly>
+  <button id="generatePasswordButton">Generate Password</button><br><br>
+
+  <!-- Form to save passwords -->
+  <form id="passwordForm">
+    <label for="website">Website:</label>
+    <input type="text" id="website" required><br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required><br>
+    <label for="password">Password:</label>
+    <input type="text" id="password" required><br>
+    <button type="submit">Save</button>
+  </form>
+  
+  <h2>Saved Passwords</h2>
+  <ul id="passwordList"></ul>
+
+  <!-- Load the JavaScript -->
+  <script src="js/popup.js"></script>
+</body>
+</html>
