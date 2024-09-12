@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 250px;
+  }
+  
+  h1 {
+    font-size: 18px;
+  }
+  
+  form label {
+    display: block;
+    margin: 5px 0 2px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #passwordList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #passwordList li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
